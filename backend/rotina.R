@@ -7,6 +7,63 @@ library(stringi)
 source('funcoes.R')
 #===============================================================================
 
+#funcoes =======================================================================
+trataTexto = function(txt){
+  lista_cornos = c('ALDERICO ROCHA SANTOS - Juiz Federal',
+                   'ÁTILA NAVES AMARAL - Juiz de Direito 1',
+                   'DFEACC',
+                   'DFEANS',
+                   'DFEGNA',
+                   'DFELZA',
+                   'JOSÉ PROTO DE OLIVEIRA - Juiz Auxiliar 2',
+                   'JOSÉ PROTO DE OLIVEIRA - Juiz de Direito 2',
+                   'JULIANO TAVEIRA BERNARDES - Juiz Auxiliar 1',
+                   'LEANDRO CRISPIM - Presidente',
+                   'LUIZ EDUARDO DE SOUSA - Corregedor Regional Eleitoral',
+                   'LUIZ EDUARDO DE SOUSA - Vice-Presidente',
+                   'MARCIO ANTONIO DE SOUSA MORAES JUNIOR - Jurista 1',
+                   'OVIDIO MARTINS DE ARAUJO - Juiz Auxiliar 3',
+                   'PA095ITA',
+                   'PA132HID',
+                   'VICENTE LOPES DA ROCHA JÚNIOR - Jurista 2')
+  
+  if(txt %in% lista_cornos){
+    txt = switch(txt,
+                 'ALDERICO ROCHA SANTOS - Juiz Federal' = 'GBJF',
+                 'ÁTILA NAVES AMARAL - Juiz de Direito 1' = 'GBJDI',
+                 'JOSÉ PROTO DE OLIVEIRA - Juiz Auxiliar 2' = 'GBJAII',
+                 'JOSÉ PROTO DE OLIVEIRA - Juiz de Direito 2' = 'GBJDII',
+                 'JULIANO TAVEIRA BERNARDES - Juiz Auxiliar 1' = 'GBJAI',
+                 'LEANDRO CRISPIM - Presidente' = 'PRES',
+                 'LUIZ EDUARDO DE SOUSA - Corregedor Regional Eleitoral' = 'VPCRE',
+                 'LUIZ EDUARDO DE SOUSA - Vice-Presidente' = 'VPCRE',
+                 'MARCIO ANTONIO DE SOUSA MORAES JUNIOR - Jurista 1' = 'GBJUI',
+                 'OVIDIO MARTINS DE ARAUJO - Juiz Auxiliar 3' = 'GBJAIII',
+                 'VICENTE LOPES DA ROCHA JÚNIOR - Jurista 2' = 'GBJUII',
+                 txt)
+  } else {
+    for(letra in LETTERS[1:26]) txt = gsub(letra, '', txt)
+    txt = gsub(' ', '', txt)
+    txt = gsub('Á', '', txt)
+    txt = gsub('ª', '', txt)
+    txt = gsub('Â', '', txt)
+    txt = gsub('Ô', '', txt)
+    txt = gsub('Í', '', txt)
+    txt = gsub('Ç', '', txt)
+    txt = gsub('Ú', '', txt)
+    txt = gsub('Ã', '', txt)
+    txt = gsub('ÃÍ', '', txt)
+    txt = gsub('Ó', '', txt)
+    txt = gsub('Ô', '', txt)
+    txt = gsub('É', '', txt)
+    
+    txt = as.numeric(txt)
+  }
+  
+  return(txt)
+}
+#===============================================================================
+
 #tabelas =======================================================================
 assuntos = read.csv('01 dados brutos/assuntos.csv',
                     header = T,
@@ -91,4 +148,28 @@ processos = transform(processos,
                                                 0, qtd_repeticoes))
 #===============================================================================
 
-head(processos)
+#tabela de-para ================================================================
+dat_aux = subset(processos, select = c('origem', 'id_orgao_julgador_origem',
+                                       'nome_orgao_julgador_origem'))
+dat = aggregate(ind ~ origem + id_orgao_julgador_origem +
+                  nome_orgao_julgador_origem,
+                FUN = sum, data = data.frame(dat_aux, ind = 1))[,1:3]
+
+dat['de_para'] = apply(dat['nome_orgao_julgador_origem'], 1, trataTexto)
+
+serventias_1g = read.csv('01 dados brutos/serventias-1g.csv',
+                         header = T, sep = ';', encoding = 'UTF-8')
+serventias_1g = transform(serventias_1g, 
+                          de_para = as.numeric(substr(serventia_nome, 1, 3)))
+serventias_2g = read.csv('01 dados brutos/serventias-2g.csv',
+                         header = T, sep = ';', encoding = 'UTF-8')
+serventias_2g['de_para'] = c('VPCRE','GBJI','GBJII','GBJDI','GBJDII','GBJF',
+                             'GBJAI','GBJAII','GBJAIII','PRES')
+
+serventias = rbind(serventias_1g[,c('serventia_id', 'de_para')],
+                   serventias_2g[,c('serventia_id', 'de_para')])
+
+dat = merge(dat, serventias, by = 'de_para', all = T)
+
+rm(dat_aux, serventias, serventias_1g, serventias_2g)
+#===============================================================================
