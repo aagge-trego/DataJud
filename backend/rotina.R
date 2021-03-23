@@ -9,7 +9,7 @@ source('funcoes.R')
 
 #funcoes =======================================================================
 trataTexto = function(txt){
-  lista_cornos = c('ALDERICO ROCHA SANTOS - Juiz Federal',
+  lista_serven = c('ALDERICO ROCHA SANTOS - Juiz Federal',
                    'ÁTILA NAVES AMARAL - Juiz de Direito 1',
                    'DFEACC',
                    'DFEANS',
@@ -27,7 +27,7 @@ trataTexto = function(txt){
                    'PA132HID',
                    'VICENTE LOPES DA ROCHA JÚNIOR - Jurista 2')
   
-  if(txt %in% lista_cornos){
+  if(txt %in% lista_serven){
     txt = switch(txt,
                  'ALDERICO ROCHA SANTOS - Juiz Federal' = 'GBJF',
                  'ÁTILA NAVES AMARAL - Juiz de Direito 1' = 'GBJDI',
