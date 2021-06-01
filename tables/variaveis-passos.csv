@@ -1,0 +1,71 @@
+VARIAVEL;G1;G2;PASSO;VARIAVEL_CNJ;GRUPO;ROTULO;DESCRICAO
+CARTAD2;0;1;3;CartaD2º;Cartas;Devolvidas;Cartas precatórias, rogatórias e de ordem devolvidas pelo 2º Grau
+CARTAN2;0;1;3;CartaN2º;Cartas;Novas;Cartas precatórias, rogatórias e de ordem novas no 2º Grau
+CNOCRIM2;0;1;3;CnOCrim2º;Novos;Originários Criminais;Casos Novos Originários no 2º Grau Criminais
+CNONCRIM2;0;1;3;CnONCrim2º;Novos;Originários Não Criminais;Casos Novos Originários no 2º Grau Não-Criminais
+CNRCRIM2;0;1;3;CnRCrim2º;Novos;Recursais Criminais;Casos Novos Recursais no 2º Grau Criminais
+CNRNCRIM2;0;1;3;CnRNCrim2º;Novos;Recursais Não Criminais;Casos Novos Recursais no 2º Grau Não-Criminais
+CPCRIM2;0;1;3;CpCrim2º;Pendentes;Criminais;Casos Pendentes no 2º Grau Criminais
+CPNCRIM2;0;1;3;CpNCrim2º;Pendentes;Não Criminais;Casos Pendentes no 2º Grau Não-Criminais
+PREDCRIM2;0;1;3;PRedCrim2º;Processos Redistribuídos;Criminais;Processos Criminais de 2º grau encaminhados a outra unidade judiciária por motivo de Redistribuição
+PREDNCRIM2;0;1;3;PRedNCrim2º;Processos Redistribuídos;Não Criminais;Processos Não-Criminais de 2º grau encaminhados a outra unidade judiciária por motivo de Redistribuição
+PREDRCRIM2;0;1;3;PRedRCrim2º;Processos Redistribuídos;Recursais Criminais;Processos Criminais de 2º grau recebidos, após terem sido encaminhados de outra unidade judiciária por motivo de Redistribuição
+PREDRNCRIM2;0;1;3;PRedRNCrim2º;Processos Redistribuídos;Recursais Não Criminais;Processos Não Criminais de 2º grau recebidos, após terem sido encaminhados de outra unidade judiciária por motivo de Redistribuição
+PROCINVARQ2;0;1;3;ProcInvArq2º;Procedimentos Investigativos;Arquivados;Todos os procedimentos investigatórios que foram arquivados pelo 2º Grau durante o período-base
+PROCINVN2;0;1;3;ProcInvN2º;Procedimentos Investigativos;Novos;Procedimentos investigatórios que foram distribuídos ou redistribuídos para o 2º Grau durante o período-base
+PROCINVP2;0;1;3;ProcInvP2º;Procedimentos Investigativos;Pendentes;Procedimentos investigatórios que foram distribuídos ou redistribuídos para o 2º Grau e que até o final do período-base (mês) não tinham recebido pedido de arquivamento ou denúncia do Ministério Público
+RINT2;0;1;3;Rint2º;Recursos Internos;Recursos Internos;Recursos Internos no 2º Grau
+RINTP2;0;1;3;RintP2º;Recursos Internos;Pendentes;Recursos Internos Pendentes no 2º Grau
+SUS2;0;1;3;SuS2º;Suspensões;Suspensos ou Sobrestados;Processos Suspensos ou Sobrestados ou em Arquivo Provisório no 2º Grau
+TBAIXCRIM2;0;1;3;TBaixCrim2º;Baixados;Criminais;Total de Processos Baixados no 2º Grau Criminais
+TBAIXNCRIM2;0;1;3;TBaixNCrim2º;Baixados;Baixados Não Criminais;Total de Processos Baixados no 2º Grau Não-Criminais
+VPFGCRIM2;0;1;3;VPfGCrim2º;Votos;Voto-Vista Fora do Gabinete Criminais;Os processos criminais, originários ou em grau de recurso oriundos de instância inferior, distribuídos ou redistribuídos ao gabinete, que até o final do período-base (mês) aguardavam voto-vista de outro gabinete. Consideram-se apenas as classes processuais compreendidas nas variáveis: a) CnOCrim2º - Casos Novos Originários no 2º Grau Criminais e b) CnRCrim2º - Casos Novos Recursais no 2º Grau Criminais.
+VPFGNCRIM2;0;1;3;VPfGNCrim2º;Votos;Voto-Vista Fora do Gabinete Não Criminais;Os processos não-criminais, originários ou em grau de recurso oriundos de instância inferior, distribuídos ou redistribuídos ao gabinete, que até o final do período-base (mês) aguardavam voto-vista de outro gabinete. Consideram-se apenas as classes processuais compreendidas nas variáveis: a) CnONCrim2º - Casos Novos Originários no 2º Grau Não-Criminais e b) CnRNCrim2º - Casos Novos Recursais no 2º Grau Não-Criminais.
+VPNGCRIM2;0;1;3;VPnGCrim2º;Votos;Voto-Vista Fora do Próprio Criminais;Os processos criminais, originários ou em grau de recurso oriundos de instância inferior, de relatoria de outro desembargador/gabinete, que até o final do período-base (mês) aguardavam voto-vista no próprio gabinete. Consideram-se apenas as classes processuais compreendidas nas variáveis: a) CnOCrim2º - Casos Novos Originários no 2º Grau Criminais e b) CnRCrim2º - Casos Novos Recursais no 2º Grau Criminais.
+VPNGNCRIM2;0;1;3;VPnGNCrim2º;Votos;Voto-Vista Fora do Próprio Não Criminais;Os processos não-criminais, originários ou em grau de recurso oriundos de instância inferior, de relatoria de outro desembargador/gabinete, que até o final do período-base (mês) aguardavam voto-vista no próprio gabinete. Consideram-se apenas as classes processuais compreendidas nas variáveis: a) CnONCrim2º - Casos Novos Originários no 2º Grau Não-Criminais e b) CnRNCrim2º - Casos Novos Recursais no 2º Grau Não-Criminais.
+CARTAD1;1;0;3;CartaD1º;Cartas;Devolvidas;Cartas precatórias, rogatórias e de ordem devolvidas pelo 1º Grau
+CARTAN1;1;0;3;CartaN1º;Cartas;Novas;Cartas precatórias, rogatórias e de ordem novas no 1º Grau
+CNCCRIM1;1;0;3;CnCCrim1º;Novos;Criminais;Casos Novos de Conhecimento no 1º Grau Criminais
+CNCNCRIM1;1;0;3;CnCNCrim1º;Novos;Não Criminais;Casos Novos de Conhecimento no 1º Grau Não-Criminais
+CNEXTFISC1;1;0;3;CnExtFisc1º;Novos;Extra Fiscais;Casos Novos de Execução Fiscal no 1º grau
+CPCCRIM1;1;0;3;CpCCrim1º;Pendentes;Criminais;Casos Pendentes de Conhecimento no 1º Grau Criminais
+CPCNCRIM1;1;0;3;CpCNCrim1º;Pendentes;Não Criminais;Casos Pendentes de Conhecimento no 1º Grau Não-Criminais
+CPEXTFISC1;1;0;3;CpExtFisc1º;Pendentes;Extra Fiscais;Casos Pendentes de Execução Fiscal no 1º grau
+PREDCCRIM1;1;0;3;PRedCCrim1º;Processos Redistribuídos;Criminais;Processos de Conhecimento no 1º Grau Criminais encaminhados a outra unidade judiciária por motivo de Redistribuição
+PREDCNCRIM1;1;0;3;PRedCNCrim1º;Processos Redistribuídos;Não Criminais;Processos de Conhecimento no 1º Grau Não-Criminais encaminhados a outra unidade judiciária por motivo de Redistribuição
+PREDEXTFISC1;1;0;3;PRedExtFisc1º;Processos Redistribuídos;Extra Fiscais;Processos de Execução Fiscal no 1º grau encaminhados a outra unidade judiciária por motivo de Redistribuição
+PREDEXTNFISC1;1;0;3;PRedExtNFisc1º;Processos Redistribuídos;Não Extra Fiscais;Processos de Execução de Título Extrajudicial Não-Fiscais no 1º grau encaminhados a outra unidade judiciária por motivo de Redistribuição
+PREDRCCRIM1;1;0;3;PRedRCCrim1º;Processos Redistribuídos;Recebidos Criminais;Processos de Conhecimento no 1º Grau Criminais recebidos de outra unidade judiciária por motivo de Redistribuição
+PREDRCNCRIM1;1;0;3;PRedRCNCrim1º;Processos Redistribuídos;Recebidos Não Criminais;Processos de Conhecimento no 1º Grau Não-Criminais recebidos de outra unidade judiciária por motivo de Redistribuição
+PREDREXTFISC1;1;0;3;PRedRExtFisc1º;Processos Redistribuídos;Recebidos Extra Fiscais;Processos de Execução Fiscal no 1º grau recebidos de outra unidade judiciária por motivo de Redistribuição
+PREDREXTNFISC1;1;0;3;PRedRExtNFisc1º;Processos Redistribuídos;Recebidos Não Extra Fiscais;Processos de Execução de Título Extrajudicial Não-Fiscais no 1º grau recebidos de outra unidade judiciária por motivo de Redistribuição
+PROCINVARQ1;1;0;3;ProcInvArq1º;Procedimentos Investigativos;Arquivados;Procedimentos investigatórios que foram arquivados pelo 1º Grau durante o período-base
+PROCINVN1;1;0;3;ProcInvN1º;Procedimentos Investigativos;Novos;Procedimentos investigatórios que foram distribuídos ou redistribuídos para o 1º Grau durante o período-base
+PROCINVP1;1;0;3;ProcInvP1º;Procedimentos Investigativos;Pendentes;Procedimentos investigatórios que foram distribuídos ou redistribuídos para o 1º Grau e que até o final do período-base (mês) não tinham recebido pedido de arquivamento ou denúncia do Ministério Público
+RINTC1;1;0;3;RIntC1º;Recursos Internos;Recursos Internos;Recursos Internos no 1º Grau na Fase de Conhecimento
+RINTCP1;1;0;3;RIntCP1º;Recursos Internos;Pendentes;Recursos Internos Pendentes no 1º Grau na Fase de Conhecimento
+SUS1;1;0;3;SuS1º;Suspensões;Suspensos ou Sobrestados;Processos Suspensos ou Sobrestados ou em Arquivo Provisório no 1º Grau
+TBAIXCCRIM1;1;0;3;TBaixCCrim1º;Baixados;Criminais;Processos de Conhecimento Baixados no 1º Grau Criminais
+TBAIXCNCRIM1;1;0;3;TBaixCNCrim1º;Baixados;Não Criminais;Processos de Conhecimento Baixados no 1º Grau Não-Criminais
+TBAIXEXTFISC1;1;0;3;TBaixExtFisc1º;Baixados;Extra Fiscais;Total de Processos Baixados de Execução Fiscal no 1º Grau
+AUD2;0;1;4;Aud2º;Audiências;Audiências;Total de audiências realizadas pelos magistrados de 2º grau no período-base
+DECCRIM2;0;1;4;DecCrim2º;Decisões;Criminais;Decisões terminativas de processo no processo criminal no 2º Grau
+DECDC2;0;1;4;DecDC2º;Decisões;de Mérito Criminais;Decisões, colegiadas e monocráticas que põem fim à relação processual no 2º Grau
+DECH2;0;1;4;DecH2º;Decisões;Homologatórias;Decisões Homologatórias de Acordos no 2º Grau
+DECHDC2;0;1;4;DecHDC2º;Decisões;Homologatórias de Mérito Criminais;Decisões homologatórias de acordos, referentes a conflitos que já são objeto de processo em curso no 2º grau de Justiça
+DECINT2;0;1;4;DecInt2º;Decisões;Internas;Decisões interlocutórias proferidas no 2º grau de jurisdição, exceto em recursos internos
+DECNCRIM2;0;1;4;DecNCrim2º;Decisões;Não Criminais;Decisões terminativas de processo não-criminal no 2º grau
+RINTJ2;0;1;4;RintJ2º;Recursos Internos;Julgados;Recursos Internos Julgados no 2º Grau
+VOTORCRIM2;0;1;4;VotoRCrim2º;Votos;Voto Relator Criminal;Votos proferidos pelo magistrado relator ou pelo magistrado designado como redator para o acórdão (voto divergente vencedor), durante o período-base
+VOTORNCRIM2;0;1;4;VotoRNCrim2º;Votos;Voto Relator Não Criminal;Votos proferidos pelo magistrado relator ou pelo magistrado designado como redator para o acórdão (voto divergente vencedor), durante o período-base
+AUD1;1;0;4;Aud1º;Audiências;Audiências;Total de audiências realizadas pelos magistrados de 1º grau, no período-base
+DECINT1;1;0;4;DecInt1º;Decisões;Internas;Decisões interlocutórias proferidas no 1º grau de jurisdição, exceto em recursos internos
+RINTCJ1;1;0;4;RIntCJ1º;Recursos Internos;Julgados;Recursos Internos Julgados no 1º Grau na Fase de Conhecimento
+SENTCCMCRIM1;1;0;4;SentCCMCrim1º;Sentenças;Com Mérito Criminais;Sentenças de Conhecimento com Julgamento de Mérito no 1º grau Criminais
+SENTCCMNCRIM1;1;0;4;SentCCMNCrim1º;Sentenças;Com Mérito Não Criminais;Sentenças de Conhecimento com Julgamento de Mérito no 1º grau Não-Criminais
+SENTCSMCRIM1;1;0;4;SentCSMCrim1º;Sentenças;Sem Mérito Criminais;Sentenças de Conhecimento sem Julgamento de Mérito no 1º grau Criminais
+SENTCSMNCRIM1;1;0;4;SentCSMNCrim1º;Sentenças;Sem Mérito Não Criminais;Sentenças de Conhecimento sem Julgamento de Mérito no 1º grau Não-Criminais
+SENTDC1;1;0;4;SentDC1º;Sentenças;de Mérito Criminais;Sentenças proferidas em classes processuais não contabilizadas nas variáveis CnCCrim1º, CnCNrim1º e CnExtFisc1º
+SENTEXTFISC1;1;0;4;SentExtFisc1º;Sentenças;Extra Fiscais;Sentenças em Execução Fiscal no 1º grau
+SENTH1;1;0;4;SentH1º;Sentenças;Homologatórias;Sentenças Homologatórias de Acordos no 1º Grau
+SENTHDC1;1;0;4;SentHDC1º;Sentenças;Homologatórias Decisórias;Sentenças homologatórias de acordo proferidas em classes processuais não contabilizadas nas variáveis CnCCrim1º, CnCNrim1º, CnExtFisc1º, CnExtNFisc1º, ExeJudNCrim1º, ExeJudCrimNPL1º e ExeJudCrimPL1º
